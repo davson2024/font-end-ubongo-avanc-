@@ -1,0 +1,242 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0057d9;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.search-bar {
+  flex: 1;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 6px 10px;
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.profile img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+/* MAIN */
+main {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.small-text {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Progress circle */
+.progress-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#c4db9b 71%, #e4e4e4 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto;
+  position: relative;
+}
+
+.progress-circle span {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Cours */
+.course-list li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #eee;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.progress-bar span {
+  display: block;
+  height: 6px;
+  border-radius: 4px;
+  background: #0057d9;
+}
+
+.link {
+  font-size: 13px;
+  color: #0057d9;
+  text-decoration: none;
+}
+
+/* Certifications */
+.badges {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.badges img {
+  width: 40px;
+  height: 40px;
+}
+
+.certifications {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Projets */
+.projects li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.projects small {
+  display: block;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* Suggestions */
+.suggestions h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.suggestion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.suggestion {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.suggestion img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.suggestion .content {
+  padding: 15px;
+}
+
+.suggestion h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.suggestion p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: #0057d9;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px 40px;
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .links {
+  display: flex;
+  gap: 20px;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: #333;
+}

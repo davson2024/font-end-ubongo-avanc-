@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriLearn - Inscription</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header class="navbar">
+    <nav>
+      <a href="login.html" class="nav-link">Se connecter</a>
+      <a href="register.html" class="nav-link active">S’inscrire</a>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <div class="container">
+    <!-- Partie gauche -->
+    <div class="left-panel">
+      <img src="08c4061b-4a13-4afb-8675-717d6c29b802.png" alt="Illustration AfriLearn">
+    </div>
+
+    <!-- Partie droite -->
+    <div class="right-panel">
+      <div class="register-box">
+        <h2>Créer un compte AfriLearn</h2>
+        <p>Rejoignez la communauté et explorez des cours exceptionnels.</p>
+
+        <form>
+          <label for="fullname">Nom</label>
+          <input type="text" id="fullname" placeholder="Votre nom complet" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="email@exemple.com" required>
+
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" placeholder="Créez un mot de passe sécurisé" required>
+
+          <label for="confirm-password">Confirmer le mot de passe</label>
+          <input type="password" id="confirm-password" placeholder="Confirmez votre mot de passe" required>
+
+          <button type="submit" class="btn-primary">Créer un compte</button>
+        </form>
+
+        <div class="divider">ou continuer avec</div>
+
+        <div class="social-buttons">
+          <button class="btn-google">S’inscrire avec Google</button>
+          <button class="btn-linkedin">S’inscrire avec LinkedIn</button>
+        </div>
+
+        <p class="login-text">
+          Déjà un compte ? <a href="login.html">Se connecter</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

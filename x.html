@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue de Cours - IAcademy</title>
+  <link rel="stylesheet" href="x.css">
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ====== Header ====== -->
+  <header class="navbar">
+    <div class="logo">IAcademy</div>
+    <nav class="nav-links">
+      <a href="#">Accueil</a>
+      <a href="#" class="active">Catalogue de Cours</a>
+      <a href="#">Diagnostic IA</a>
+      <a href="#">Experts IA</a>
+      <a href="#">Communauté</a>
+    </nav>
+    <div class="nav-right">
+      <input type="text" placeholder="Rechercher cours, experts...">
+      <a href="#" class="login-btn">Connexion / Inscription</a>
+    </div>
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="main-container">
+    
+    <!-- Sidebar filtres -->
+    <aside class="sidebar">
+      <h3>Filtres</h3>
+      
+      <div class="filter-section">
+        <h4>Modules</h4>
+        <ul>
+          <li><input type="checkbox"> Introduction à l’IA</li>
+          <li><input type="checkbox"> Machine Learning</li>
+          <li><input type="checkbox"> Deep Learning</li>
+          <li><input type="checkbox"> NLP</li>
+          <li><input type="checkbox"> Vision par ordinateur</li>
+          <li><input type="checkbox"> Applications industrielles</li>
+        </ul>
+      </div>
+
+      <div class="filter-section">
+        <h4>Niveaux de difficulté</h4>
+        <ul>
+          <li><input type="checkbox"> Débutant</li>
+          <li><input type="checkbox"> Intermédiaire</li>
+          <li><input type="checkbox"> Avancé</li>
+        </ul>
+      </div>
+
+      <div class="filter-section">
+        <h4>Formats</h4>
+        <ul>
+          <li><input type="checkbox"> Vidéos</li>
+          <li><input type="checkbox"> Projets pratiques</li>
+          <li><input type="checkbox"> Quizz</li>
+          <li><input type="checkbox"> Études de cas</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Catalogue des cours -->
+    <section class="courses">
+      
+      <!-- 1 -->
+      <div class="course-card">
+        <img src="https://picsum.photos/300/200?random=1" alt="Cours IA">
+        <h3>Introduction à l'Intelligence Artificielle</h3>
+        <p>Découvrez les fondements de l’IA, son histoire et ses applications modernes.</p>
+        <div class="tags">
+          <span class="tag level">Débutant</span>
+          <span class="tag format">Vidéos</span>
+        </div>
+        <p class="duration">10 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <!-- 2 -->
+      <div class="course-card">
+        <img src="https://picsum.photos/300/200?random=2" alt="Cours ML">
+        <h3>Machine Learning Essentiels</h3>
+        <p>Maîtrisez les algorithmes clés du Machine Learning pour l’analyse de données.</p>
+        <div class="tags">
+          <span class="tag level">Intermédiaire</span>
+          <span class="tag format">Projets pratiques</span>
+        </div>
+        <p class="duration">20 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <!-- 3 -->
+      <div class="course-card">
+        <img src="https://picsum.photos/300/200?random=3" alt="Cours Deep Learning">
+        <h3>Plongée dans le Deep Learning</h3>
+        <p>Explorez les réseaux neuronaux avancés et leurs applications en IA.</p>
+        <div class="tags">
+          <span class="tag level">Avancé</span>
+          <span class="tag format">Vidéos</span>
+        </div>
+        <p class="duration">30 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <!-- 4 -->
+      <div class="course-card">
+        <img src="https://picsum.photos/300/200?random=4" alt="Cours NLP">
+        <h3>Traitement du Langage Naturel (NLP)</h3>
+        <p>Comprenez comment les machines interprètent et gèrent le langage humain.</p>
+        <div class="tags">
+          <span class="tag level">Intermédiaire</span>
+          <span class="tag format">Quizz</span>
+        </div>
+        <p class="duration">15 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <!-- 5 -->
+      <div class="course-card">
+        <img src="https://picsum.photos/300/200?random=5" alt="Cours Vision">
+        <h3>Vision par Ordinateur Avancée</h3>
+        <p>Développez des systèmes capables d’analyser et de comprendre des images et vidéos.</p>
+        <div class="tags">
+          <span class="tag level">Avancé</span>
+          <span class="tag format">Études de cas</span>
+        </div>
+        <p class="duration">25 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <!-- 6 -->
+      <div class="course-card">
+        <img src="https://picsum.photos/300/200?random=6" alt="Cours IA Éthique">
+        <h3>IA Éthique et Responsable</h3>
+        <p>Apprenez les principes éthiques et les enjeux sociaux de l’intelligence artificielle.</p>
+        <div class="tags">
+          <span class="tag level">Débutant</span>
+          <span class="tag format">Vidéos</span>
+        </div>
+        <p class="duration">12 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <!-- 7 -->
+      <div class="course-card">
+        <img src="https://picsum.photos/300/200?random=7" alt="Cours Applications">
+        <h3>Applications Industrielles de l’IA</h3>
+        <p>Découvrez comment l’IA transforme divers secteurs industriels.</p>
+        <div class="tags">
+          <span class="tag level">Intermédiaire</span>
+          <span class="tag format">Projets pratiques</span>
+        </div>
+        <p class="duration">18 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <!-- 8 -->
+      <div class="course-card">
+        <img src="https://picsum.photos/300/200?random=8" alt="Cours Science des données">
+        <h3>Fondamentaux de la Science des Données</h3>
+        <p>Acquérez les compétences essentielles pour manipuler et analyser des données.</p>
+        <div class="tags">
+          <span class="tag level">Débutant</span>
+          <span class="tag format">Quizz</span>
+        </div>
+        <p class="duration">22 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <!-- 9 -->
+      <div class="course-card">
+        <img src="https://picsum.photos/300/200?random=9" alt="Cours Reinforcement Learning">
+        <h3>Apprentissage par Renforcement</h3>
+        <p>Concevez des agents intelligents capables d’apprendre par essai-erreur.</p>
+        <div class="tags">
+          <span class="tag level">Avancé</span>
+          <span class="tag format">Études de cas</span>
+        </div>
+        <p class="duration">28 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <a href="#">À propos de l’IAc</a>
+      <a href="#">Ressources</a>
+      <a href="#">Légal</a>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="madeby">Made with 💙 by <span>VotreSite</span></p>
+  </footer>
+
+</body>
+</html>

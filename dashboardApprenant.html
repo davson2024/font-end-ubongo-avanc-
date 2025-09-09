@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAcademy - Dashboard</title>
+  <link rel="stylesheet" href="dashboardApprenant.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">IAcademy</div>
+    <nav class="navbar">
+      <a href="acuiel.html">Accueil</a>
+      <a href="categoriesCours.html">Catalogue de Cours</a>
+      <a href="diagnostic.html">Diagnostic IA</a>
+      <a href="expert.html">Experts IA</a>
+      <a href="espaceCommunautaire.html">Communauté</a>
+    </nav>
+    <div class="header-right">
+      <input type="text" placeholder="Rechercher cours, experts...">
+      <div class="icons">
+        <span>🔔</span>
+        <span>💬</span>
+        <img src="avatar.png" alt="Avatar" class="avatar">
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <h1>Bienvenue, Alice Dubois !</h1>
+
+    <section class="dashboard">
+      <div class="card">
+        <h2>Progression Globale</h2>
+        <div class="progress-circle">71%</div>
+        <p>0 cours terminés sur 7</p>
+      </div>
+
+      <div class="card">
+        <h2>Cours en Cours</h2>
+        <ul class="course-list">
+          <li>Introduction à l’IA <span>85%</span></li>
+          <li>Machine Learning Avancé <span>40%</span></li>
+          <li>IA Éthique et Responsable <span>95%</span></li>
+          <li>Vision par Ordinateur <span>10%</span></li>
+          <li>NLP pour Débutants <span>60%</span></li>
+        </ul>
+        <a href="#">Voir tous les cours</a>
+      </div>
+
+      <div class="card">
+        <h2>Certifications & Badges</h2>
+        <p><strong>Vos Badges</strong></p>
+        <div class="badges">
+          <img src="badge1.png" alt="Badge 1">
+          <img src="badge2.png" alt="Badge 2">
+        </div>
+        <p><strong>Vos Certifications</strong></p>
+        <ul>
+          <li>Certification Fondamentaux de l’IA <span>2023-10-15</span></li>
+          <li>Spécialisation Deep Learning <span>2024-03-20</span></li>
+        </ul>
+        <a href="#">Voir toutes les récompenses</a>
+      </div>
+
+      <div class="card">
+        <h2>Projets Pratiques à Rendre</h2>
+        <ul>
+          <li>Classification d’images avec CNN <span>Échéance: 2024-07-30</span></li>
+          <li>Déploiement d’un modèle NLP <span>Échéance: 2024-08-15</span></li>
+        </ul>
+        <a href="#">Voir tous les projets</a>
+      </div>
+    </section>
+
+    <section class="suggestions">
+  <h2>Suggestions de Parcours Personnalisés</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="optimisation.jpg" alt="Optimisation de modèles IA">
+      <h3>Optimisation de Modèles IA</h3>
+      <p>Apprenez les techniques avancées pour affiner et optimiser vos modèles d’IA.</p>
+      <span>Niveau: Avancé</span>
+      <a href="optimisation.html" class="btn-link">Voir le cours</a>
+    </div>
+
+    <div class="card">
+      <img src="ia-generative.jpg" alt="IA Générative">
+      <h3>Découverte de l’IA Générative</h3>
+      <p>Explorez les fondements de l’IA générative et découvrez comment créer du contenu innovant.</p>
+      <span>Niveau: Intermédiaire</span>
+      <a href="ia-generative.html" class="btn-link">Voir le cours</a>
+    </div>
+
+    <div class="card">
+      <img src="robotique.jpg" alt="IA et Robotique">
+      <h3>IA et Robotique : Les Bases</h3>
+      <p>Introduction à la robotique et à la perception environnementale.</p>
+      <span>Niveau: Débutant</span>
+      <a href="robotique.html" class="btn-link">Voir le cours</a>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <a href="#">À Propos IAcademy</a>
+      <a href="#">Ressources</a>
+      <a href="#">Légal</a>
+    </div>
+    <div class="socials">
+      <span>🐦</span>
+      <span>💼</span>
+      <span>📘</span>
+    </div>
+  </footer>
+</body>
+</html>

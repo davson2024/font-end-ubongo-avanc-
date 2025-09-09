@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Layout général */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar gauche */
+.sidebar {
+  width: 280px;
+  background: #f8f9fb;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.module {
+  margin-bottom: 20px;
+}
+
+.module-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.lesson {
+  padding-left: 10px;
+  font-size: 14px;
+  margin: 5px 0;
+  color: #0073e6;
+  cursor: pointer;
+}
+
+/* Contenu principal */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.video-box {
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.video-box::after {
+  content: "▶";
+  font-size: 40px;
+  color: #999;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Section commentaires */
+.comments {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.comment img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-content strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.comment-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.comment-time {
+  font-size: 12px;
+  color: #888;
+}
+
+.add-comment textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  font-family: inherit;
+}
+
+.add-comment button {
+  margin-top: 10px;
+  background: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-comment button:hover {
+  background: #005bb5;
+}

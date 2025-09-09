@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue de Cours - IAcademy</title>
+  <link rel="stylesheet" href="categoriesCours.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">IAcademy</div>
+    <nav>
+      <ul>
+        <li><a href="acuiel.html">Accueil</a></li>
+        <li><a href="categoriesCours.html">Catalogue de Cours</a></li>
+        <li><a href="diagnostic.html">Diagnostic IA</a></li>
+        <li><a href="expert.html">Experts IA</a></li>
+        <li><a href="espaceCommunautaire.html">Communauté</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <input type="text" placeholder="Rechercher cours, experts..." class="search">
+      <a href="#" class="btn-login">Connexion / Inscription</a>
+    </div>
+  </header>
+
+  <!-- Section principale -->
+  <main class="main-container">
+    <!-- Filtres -->
+    <aside class="filters">
+      <h3>Filtres</h3>
+      <div class="filter-group">
+        <h4>Modules</h4>
+        <ul>
+          <li><input type="checkbox"> Introduction à l’IA</li>
+          <li><input type="checkbox"> Machine Learning</li>
+          <li><input type="checkbox"> Deep Learning</li>
+          <li><input type="checkbox"> NLP</li>
+          <li><input type="checkbox"> Vision par ordinateur</li>
+          <li><input type="checkbox"> IA éthique</li>
+          <li><input type="checkbox"> Applications industrielles</li>
+        </ul>
+      </div>
+      <div class="filter-group">
+        <h4>Niveaux de difficulté</h4>
+        <ul>
+          <li><input type="checkbox"> Débutant</li>
+          <li><input type="checkbox"> Intermédiaire</li>
+          <li><input type="checkbox"> Avancé</li>
+        </ul>
+      </div>
+      <div class="filter-group">
+        <h4>Formats</h4>
+        <ul>
+          <li><input type="checkbox"> Vidéos</li>
+          <li><input type="checkbox"> Projets pratiques</li>
+          <li><input type="checkbox"> Quizz</li>
+          <li><input type="checkbox"> Études de cas</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Cartes de cours -->
+    <section class="courses">
+      <!-- Exemple de carte -->
+      <div class="course-card">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <h3>Introduction à l'Intelligence Artificielle</h3>
+        <p>Découvrez les fondements de l’IA, son histoire et ses applications modernes.</p>
+        <div class="tags">
+          <span>Débutant</span>
+          <span>Vidéos</span>
+        </div>
+        <p class="duration">10 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <div class="course-card">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <h3>Machine Learning Essentiels</h3>
+        <p>Maîtrisez les algorithmes clés du Machine Learning pour l’analyse de données.</p>
+        <div class="tags">
+          <span>Intermédiaire</span>
+          <span>Projets pratiques</span>
+        </div>
+        <p class="duration">20 heures</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+
+      <!-- Ajoute les autres cartes exactement comme dans la maquette -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">À propos de l’IAc</a>
+      <a href="#">Ressources</a>
+      <a href="#">Légal</a>
+    </div>
+    <p class="made">Made with 💙</p>
+  </footer>
+</body>
+</html>

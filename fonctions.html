@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paramètres du Compte</title>
+  <link rel="stylesheet" href="fonction.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">IAcademy</div>
+    <nav class="nav">
+      <a href="acuiel.html">Accueil</a>
+      <a href="categoriesCours.html">Catalogue de Cours</a>
+      <a href="diagnostic.html">Diagnostic IA</a>
+      <a href="expert.html">Experts IA</a>
+      <a href="espaceCommunautaire.html">Communauté</a>
+    </nav>
+    <div class="actions">
+      <input type="text" placeholder="Rechercher des cours, experts">
+      <button class="btn">Login / Sign Up</button>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main">
+    <h1>Paramètres du Compte</h1>
+
+    <!-- Authentification & Sécurité -->
+    <section class="card">
+      <h2>Authentification & Sécurité</h2>
+      <p>Gérez vos méthodes de connexion et renforcez la sécurité de votre compte.</p>
+
+      <div class="block">
+        <h3>Connexion par Email</h3>
+        <p>Votre adresse email: utilisateur@iacademy.com</p>
+        <button class="btn-outline">Changer le mot de passe</button>
+      </div>
+
+      <div class="block">
+        <h3>Connexions Sociales</h3>
+        <button class="btn-outline">Connecter avec Google</button>
+        <button class="btn-outline">Connecter avec LinkedIn</button>
+      </div>
+
+      <div class="block flex-between">
+        <h3>Authentification à Deux Facteurs (2FA)</h3>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Modes de Paiement -->
+    <section class="card">
+      <h2>Modes de Paiement</h2>
+      <p>Gérez vos informations de paiement sécurisées pour les achats de cours et les abonnements.</p>
+
+      <ul class="payment-list">
+        <li>💳 Visa se terminant par 4242 (Expire 12/26) <span class="delete">🗑</span></li>
+        <li>💳 MasterCard se terminant par 8888 (Expire 07/25) <span class="delete">🗑</span></li>
+      </ul>
+      <button class="btn">+ Ajouter un mode de paiement</button>
+    </section>
+
+    <!-- Préférences de Notifications -->
+    <section class="card">
+      <h2>Préférences de Notifications</h2>
+      <p>Choisissez les types de notifications que vous souhaitez recevoir par email ou via l’application.</p>
+
+      <form class="notifications">
+        <label><input type="checkbox" checked> Mises à jour des cours et nouvelles formations</label>
+        <label><input type="checkbox"> Activité communautaire (mentions, réponses aux posts)</label>
+        <label><input type="checkbox" checked> Tendances et actualités de l'IA</label>
+        <label><input type="checkbox"> Rappels de délais de projets</label>
+        <button type="submit" class="btn">Enregistrer les préférences</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>
+      <a href="#">About IAcademy</a>
+      <a href="#">Resources</a>
+      <a href="#">Legal</a>
+    </div>
+    <div class="socials">
+      <a href="#">🌐</a>
+      <a href="#">🐦</a>
+      <a href="#">💼</a>
+    </div>
+  </footer>
+</body>
+</html>

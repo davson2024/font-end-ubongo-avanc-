@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - Ubongo IAcademy</title>
+  <link rel="stylesheet" href="login.css"> <!-- ton fichier CSS global -->
+</head>
+<body>
+
+  <section class="login">
+    <div class="login-container">
+      <h2>Connexion</h2>
+
+      <!-- Sélection du type de compte -->
+      <div class="user-types">
+        <button class="active" data-type="apprenant">Apprenant</button>
+        <button data-type="expert">Expert</button>
+        <button data-type="entreprise">Entreprise</button>
+        <button data-type="enseignant">Enseignant</button>
+      </div>
+
+      <!-- Formulaire -->
+      <form action="#" method="post">
+        <input type="hidden" name="user_type" id="user_type" value="apprenant">
+
+        <label>Email :</label>
+        <input type="email" name="email" placeholder="Entrez votre email" required>
+
+        <label>Mot de passe :</label>
+        <input type="password" name="password" placeholder="Votre mot de passe" required>
+
+        <button type="submit" class="btn-primary">Se connecter</button>
+      </form>
+
+      <p class="register-link">
+        Pas encore de compte ? <a href="register.html">Inscrivez-vous</a>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    // JS pour activer le bon bouton
+    const buttons = document.querySelectorAll(".user-types button");
+    const hiddenInput = document.getElementById("user_type");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        hiddenInput.value = btn.dataset.type;
+      });
+    });
+  </script>
+
+</body>
+</html>

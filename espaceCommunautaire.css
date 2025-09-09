@@ -1,0 +1,180 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #222;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2563eb;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.searchbar {
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 20px;
+  width: 200px;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  padding: 40px;
+  gap: 30px;
+}
+
+.main-content {
+  flex: 2;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+/* Discussions */
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.discussion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.discussion-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.discussion-card h3 {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.tag {
+  display: inline-block;
+  background: #e6f3ff;
+  color: #2563eb;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.tag.green {
+  background: #f5fbe6;
+  color: #22863a;
+}
+
+.discussion-card p {
+  color: #444;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.discussion-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Sidebar */
+.sidebar-section {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.ranking-list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.badge {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.events li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.events a {
+  color: #2563eb;
+  font-size: 13px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 30px;
+}

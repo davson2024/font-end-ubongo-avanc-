@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AfricaIA Consulting</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">AfricaIA Consulting</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="index.html#about">À Propos</a></li>
+                <li><a href="#diagnostic">Diagnostic IA</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-header fade-in">
+                <h1>Contactez-Nous</h1>
+                <p>Nous sommes là pour vous accompagner dans votre transformation digitale. N'hésitez pas à nous contacter pour discuter de vos projets IA.</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form fade-in">
+                    <h2>Envoyez-nous un Message</h2>
+                    <div class="success-message" id="successMessage">
+                        Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nom">Nom complet *</label>
+                            <input type="text" id="nom" name="nom" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adresse email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="entreprise">Entreprise</label>
+                            <input type="text" id="entreprise" name="entreprise" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sujet">Sujet *</label>
+                            <select id="sujet" name="sujet" class="form-control" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="diagnostic">Diagnostic IA</option>
+                                <option value="consulting">Consulting stratégique</option>
+                                <option value="formation">Formation et accompagnement</option>
+                                <option value="developpement">Développement de solutions</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" required placeholder="Décrivez-nous votre projet ou vos besoins en détail..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Envoyer le Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info slide-in">
+                    <h2>Informations de Contact</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Adresse</h3>
+                            <p>123 Avenue de l'Innovation<br>
+                            Dakar, Sénégal<br>
+                            BP 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Téléphone</h3>
+                            <p>+221 33 123 45 67<br>
+                            +221 77 987 65 43</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>contact@africaia-consulting.com<br>
+                            info@africaia-consulting.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div class="info-content">
+                            <h3>Horaires</h3>
+                            <p>Lundi - Vendredi: 8h00 - 18h00<br>
+                            Samedi: 9h00 - 13h00<br>
+                            Dimanche: Fermé</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🌐</div>
+                        <div class="info-content">
+                            <h3>Réseaux Sociaux</h3>
+                            <p>LinkedIn: @africaia-consulting<br>
+                            Twitter: @africaia_ai<br>
+                            Facebook: AfricaIA Consulting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <p>🗺️ Carte interactive - Localisation à Dakar, Sénégal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header fade-in">
+                <h2>Questions Fréquentes</h2>
+                <p>Trouvez rapidement les réponses aux questions les plus courantes</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Combien de temps prend un diagnostic IA ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Un diagnostic IA complet prend généralement entre 2 à 4 semaines selon la complexité de votre organisation et le nombre de processus à analyser.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quels sont vos tarifs ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos tarifs varient selon le type de service et la taille de votre projet. Contactez-nous pour obtenir un devis personnalisé adapté à vos besoins spécifiques.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Travaillez-vous avec des PME ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument ! Nous adaptons nos services aux PME avec des solutions flexibles et abordables. Nous croyons que l'IA doit être accessible à toutes les entreprises.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous de la formation ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons des formations sur mesure pour vos équipes, allant des concepts de base de l'IA aux formations techniques avancées.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Dans quels pays intervenez-vous ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous intervenons principalement en Afrique de l'Ouest, mais nous pouvons également travailler à distance avec des clients dans toute l'Afrique et même internationalement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AfricaIA Consulting. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            setTimeout(() => {
+                // Show success message
+                const successMessage = document.getElementById('successMessage');
+                successMessage.classList.add('show');
+                
+                // Reset form
+                this.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            }, 500);
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const toggle = question.querySelector('.faq-toggle');
+                
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem && item.classList.contains('active')) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').classList.remove('active');
+                        item.querySelector('.faq-toggle').textContent = '+';
+                    }
+                });
+                
+                // Toggle current item
+                faqItem.classList.toggle('active');
+                answer.classList.toggle('active');
+                toggle.textContent = faqItem.classList.contains('active') ? '×' : '+';
+            });
+        });
+
+        // Animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = Math.random() * 0.3 + 's';
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animatable elements
+        document.querySelectorAll('.faq-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form validation
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.hasAttribute('required') && !this.value.trim()) {
+                    this.style.borderColor = '#e74c3c';
+                } else {
+                    this.style.borderColor = '#dee2e6';
+                }
+            });
+        });
+
+        // Email validation
+        document.getElementById('email').addEventListener('input', function() {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (this.value && !emailRegex.test(this.value)) {
+                this.style.borderColor = '#e74c3c';
+            } else {
+                this.style.borderColor = '#dee2e6';
+            }
+        });
+
+        // Phone validation
+        document.getElementById('telephone').addEventListener('input', function() {
+            // Remove non-numeric characters
+            this.value = this.value.replace(/[^0-9+\-\s()]/g, '');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading state to submit button
+        document.getElementById('contactForm').addEventListener('submit', function() {
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            
+            submitButton.textContent = 'Envoi en cours...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

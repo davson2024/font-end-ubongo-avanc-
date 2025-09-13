@@ -1,0 +1,255 @@
+/* 🎨 Variables simples */
+:root {
+  --primary-color: #E74C3C;   /* Rouge */
+  --secondary-color: #F1C40F; /* Jaune */
+  --accent-color: #27AE60;    /* Vert */
+  --dark-color: #2C3E50;      /* Gris foncé */
+  --light-color: #ECF0F1;     /* Gris clair */
+  --white: #ffffff;
+}
+
+/* 🧹 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+/* 🔝 Header */
+.header {
+  background: var(--dark-color);
+  color: var(--white);
+  padding: 15px 0;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-menu li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-menu li a.active,
+.nav-menu li a:hover {
+  color: var(--secondary-color);
+}
+
+/* 🖼️ Hero */
+.hero {
+  background: url("https://img.freepik.com/free-photo/african-pattern-background_1232-3036.jpg") 
+              center/cover no-repeat;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+.hero h1 {
+  font-size: 42px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.african-divider {
+  margin: 20px auto;
+  width: 80px;
+  height: 4px;
+  background: var(--secondary-color);
+}
+
+/* 📝 Sections générales */
+section {
+  padding: 50px 10%;
+  background: var(--white);
+}
+section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+section p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* 🌍 Mission */
+.mission {
+  background: var(--light-color);
+}
+.mission-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.mission-text, .mission-visual {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+.mission-visual {
+  text-align: center;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  background: var(--white);
+}
+.mission-visual h3 {
+  margin: 10px 0;
+  color: var(--accent-color);
+}
+
+/* 💎 Valeurs */
+.values {
+  background: var(--white);
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.value-card {
+  background: var(--light-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.value-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* 👥 Équipe */
+.team {
+  background: var(--light-color);
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.team-member {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid var(--secondary-color);
+}
+.member-avatar {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* 👁️ Vision */
+.vision {
+  background: var(--white);
+}
+.vision-content {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* 🚀 Call-to-action */
+.cta {
+  background: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 60px 10%;
+}
+.cta h2 {
+  color: var(--white);
+}
+.btn-primary {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: var(--dark-color);
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.btn-primary:hover {
+  background: var(--white);
+  color: var(--primary-color);
+}
+.contact-background {
+    background: url("images/footer-background.jpg") 
+                center bottom/cover no-repeat;
+    padding: 80px 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.contact-background h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.contact-background p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* 👣 Footer */
+.footer {
+  background: var(--dark-color);
+  color: var(--white);
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}

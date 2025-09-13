@@ -3,59 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AfriLearn - Inscription</title>
+  <title>Inscription - Consulting IA</title>
   <link rel="stylesheet" href="register.css">
 </head>
 <body>
-  <!-- Barre de navigation -->
-  <header class="navbar">
-    <nav>
-      <a href="login.html" class="nav-link">Se connecter</a>
-      <a href="register.html" class="nav-link active">S’inscrire</a>
-    </nav>
-  </header>
 
-  <!-- Contenu principal -->
-  <div class="container">
-    <!-- Partie gauche -->
-    <div class="left-panel">
-      <img src="08c4061b-4a13-4afb-8675-717d6c29b802.png" alt="Illustration AfriLearn">
+  <div class="signup-container">
+    <h1>Créer un compte</h1>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showForm('entreprise')">Entreprise</button>
+      <button class="tab-btn" onclick="showForm('expert')">Expert</button>
     </div>
 
-    <!-- Partie droite -->
-    <div class="right-panel">
-      <div class="register-box">
-        <h2>Créer un compte AfriLearn</h2>
-        <p>Rejoignez la communauté et explorez des cours exceptionnels.</p>
+    <!-- Formulaire Entreprise -->
+    <form id="form-entreprise" class="form active">
+      <input type="text" placeholder="Nom de l'entreprise" required>
+      <input type="text" placeholder="Secteur d'activité" required>
+      <input type="number" placeholder="Taille de l'entreprise (nombres d'employés)" required>
+      <input type="email" placeholder="Email professionnel" required>
+      <input type="password" placeholder="Mot de passe" required>
+      <button type="submit">S'inscrire en tant qu'Entreprise</button>
+    </form>
 
-        <form>
-          <label for="fullname">Nom</label>
-          <input type="text" id="fullname" placeholder="Votre nom complet" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="email@exemple.com" required>
-
-          <label for="password">Mot de passe</label>
-          <input type="password" id="password" placeholder="Créez un mot de passe sécurisé" required>
-
-          <label for="confirm-password">Confirmer le mot de passe</label>
-          <input type="password" id="confirm-password" placeholder="Confirmez votre mot de passe" required>
-
-          <button type="submit" class="btn-primary">Créer un compte</button>
-        </form>
-
-        <div class="divider">ou continuer avec</div>
-
-        <div class="social-buttons">
-          <button class="btn-google">S’inscrire avec Google</button>
-          <button class="btn-linkedin">S’inscrire avec LinkedIn</button>
-        </div>
-
-        <p class="login-text">
-          Déjà un compte ? <a href="login.html">Se connecter</a>
-        </p>
-      </div>
-    </div>
+    <!-- Formulaire Expert -->
+    <form id="form-expert" class="form">
+      <input type="text" placeholder="Nom complet" required>
+      <input type="text" placeholder="Spécialité (ex: NLP, Data Science)" required>
+      <input type="number" placeholder="Années d'expérience" required>
+      <input type="email" placeholder="Email professionnel" required>
+      <input type="password" placeholder="Mot de passe" required>
+      <button type="submit">S'inscrire en tant qu'Expert</button>
+    </form>
   </div>
+
+  <script>
+    function showForm(type) {
+      document.querySelectorAll(".form").forEach(f => f.classList.remove("active"));
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+
+      document.getElementById("form-" + type).classList.add("active");
+      event.target.classList.add("active");
+    }
+  </script>
 </body>
 </html>
